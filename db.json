@@ -1,0 +1,90 @@
+{
+  "especialidades": [
+    {
+      "id": 1,
+      "nome": "Pediatria"
+    },
+    {
+      "id": 2,
+      "nome": "Ginecologia"
+    },
+    {
+      "id": 3,
+      "nome": "Cardiologia"
+    },
+    {
+      "id": 4,
+      "nome": "Clínico Geral"
+    }
+  ],
+  "medicos": [
+    {
+      "id": 1,
+      "crm": 3711,
+      "nome": "Drauzio Varella",
+      "especialidade": {
+        "id": 2,
+        "nome": "Pediatria"
+      }
+    },
+    {
+      "id": 2,
+      "crm": 2544,
+      "nome": "Gregory House",
+      "especialidade": {
+        "id": 3,
+        "nome": "Cardiologia"
+      }
+    },
+    {
+      "id": 3,
+      "crm": 3087,
+      "nome": "Tony Tony Chopper",
+      "especialidade": {
+        "id": 2,
+        "nome": "Pediatria"
+      }
+    }
+  ],
+  "agendas": [
+    {
+      "id": 1,
+      "medico": {
+        "id": 3,
+        "crm": 3087,
+        "nome": "Tony Tony Chopper",
+        "especialidade": {
+          "id": 2,
+          "nome": "Pediatria"
+        }
+      },
+      "dia": "2020-02-10",
+      "horarios": [
+        "14:00",
+        "14:15",
+        "16:00"
+      ]
+    },
+    {
+      "id": 2,
+      "medico": {
+        "id": 2,
+        "crm": 2544,
+        "nome": "Gregory House",
+        "especialidade": {
+          "id": 3,
+          "nome": "Cardiologia"
+        }
+      },
+      "dia": "2020-02-10",
+      "horarios": [
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "14:00"
+      ]
+    }
+  ],
+  "consultas": []
+}
