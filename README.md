@@ -8,6 +8,7 @@ Para instalar os pacotes necessários da aplicação, basta rodar o seguinte com
 ```$ npm install ```
 
 Apos a instalação dos pacotes ser concluída, inicie a aplicação com o seguinte comando:
+
 ```$ npm run start```
 
 Com isso, a aplicação estará rodando na porta 3000
