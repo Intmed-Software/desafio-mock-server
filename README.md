@@ -3,23 +3,23 @@
 Aplicacao Nodejs para servir os endpoints da API do Medicar de forma mocada para facilitar o desenvolvimento do desafio frotend.
 
 ## Instalacao
-Para instalar os pacotes necessários da aplicacao, basta rodar o seguinte comando no seu terminal:
+Para instalar os pacotes necessários da aplicação, basta rodar o seguinte comando no seu terminal:
 
 ```$ npm install ```
 
-Apos a instalacao dos pacotes concluída, rode a aplicacao com o seguinte comando:
+Apos a instalação dos pacotes ser concluída, inicie a aplicação com o seguinte comando:
 ```$ npm run start```
 
-Com isso, a aplicacão estará rodando na porta 3000
+Com isso, a aplicação estará rodando na porta 3000
 
-## Autenticacao
+## Autenticação
 Para que seja possível utilizar os endpoints, é necessário primeiramente obter um token de acesso através do seguinte endpoint via POST:
 
 ```
 POST /users/login
 ```
 
-Passando os seguintes dados de autenticacao:
+Passando os seguintes dados de autenticação:
 ```json
 {
   "username": "intmed",
@@ -40,7 +40,7 @@ Authorization   Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
 ## Endpoints
 
 ### Login
-Endpoint responsavel por retornar um token de acesso à API
+Endpoint responsável por retornar um token de acesso à API
 
 #### Requisição
 ```
@@ -54,7 +54,7 @@ POST /users/login
 ```
 
 ### Cadastro
-Endpoint responsável por cadastrar um novo usuário no Medicar (O valor de retorno é mockado retornado sempre o mesmo usuário).
+Endpoint responsável por cadastrar um novo usuário no Medicar (O valor de retorno é mockado, retornando sempre o mesmo usuário).
 
 ```
 POST /users
