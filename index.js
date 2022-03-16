@@ -2,6 +2,7 @@ import express from "express";
 import { join, dirname } from "path";
 import { Low, JSONFile } from "lowdb";
 import { fileURLToPath } from "url";
+import cors from "cors";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -12,6 +13,7 @@ const db = new Low(adapter);
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 app.use(function (req, res, next) {
   if (!req.path.startsWith("/users")) {
     const { authorization } = req.headers;
